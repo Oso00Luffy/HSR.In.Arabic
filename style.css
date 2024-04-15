@@ -22,6 +22,8 @@
     --scrollbar: 0, 0, 0;
 }
 
+
+
 :root[data-color-scheme="dark"] {
 
     /*couleurs*/
@@ -102,12 +104,13 @@ IMAGE BACKGROUND
     top: 0;
     left: 0;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     background-size: cover;
     height: 100%;
 }
 
-.containerBG::before,.containerBG:after {
+.containerBG::before,
+.containerBG::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -116,16 +119,28 @@ IMAGE BACKGROUND
     content: "";
 }
 
-.containerBG::before {filter: grayscale(100%) saturate(1000%) opacity(40%) contrast(180%);}
-.containerBG:after {background: linear-gradient(90deg, rgba(28, 28, 31, 0.00) 0%, var(--primary) 100%);}
+.containerBG::before {
+    background-image: url('https://i.imgur.com/tQR83IR.png'); /* Adjusted background image URL */
+    filter: grayscale(100%) saturate(1000%) opacity(40%) contrast(180%);
+}
 
-/*taille en fonction de la page*/
-.Accueil .containerBG {width: 40%;}
-.Lexique .containerBG {width: 30%;}
+.containerBG:after {
+    background: linear-gradient(90deg, rgba(28, 28, 31, 0.00) 0%, var(--primary) 100%);
+}
 
-/*image*/
-.Accueil .containerBG::before {background-image: url('https://i.imgur.com/tQR83IR.png');}
-.Lexique .containerBG:before {background-image: url('img/lexique.png');}
+/* Adjust the width of containerBG for different sections */
+.Accueil .containerBG { width: 40%; }
+.Lexique .containerBG { width: 30%; }
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .containerBG,
+    .Accueil .containerBG,
+    .Lexique .containerBG {
+        width: 100%; /* Adjust width to full screen */
+    }
+}
+
 
 /*vecteurs en fond*/
 .vector {
