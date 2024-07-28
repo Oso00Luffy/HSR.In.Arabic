@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Eman</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://stickerbook.carrd.co/assets/images/gallery15/827d8fac.gif?v=4cb612a8">
+    <link href='https://fonts.googleapis.com/css?family=Balsamiq Sans' rel='stylesheet'> 
+ <title>Eman</title>
+<style>
+@font-face{
+font-family:sans serif;
+src:url(https://dl.dropbox.com/scl/fi/r8vaoejd0t9f3ut5irhir/ms-sans-serif.otf?rlkey=6i78hrrbr0n5afk2rbinvnnry&dl=0);
+}
+
+html {
+  min-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  
+  background-image: url("./img/arlecchino_wallpaper.jpg");
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: repeat;
+  background-size: cover;
+  font-family: balsamiq sans;
+  font-size: 18px;
+  color: #ffffff;
+  position: relative;
+}
+
+a {
+    color: #3B332A;
+}
+
+.wrapper {
+  width: 700px;
+  display: block;
+} 
+
+.main {
+  width: auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+#meow {
+  width: auto;
+  border: -20px solid transparent;
+  height: 300px;
+  padding: 10px;
+  overflow-y: scroll;
+  background-color: transparent;
+  line-height: 1.35em;
+  scroll-behavior: smooth; /* Enhancement 2: Smooth Scrolling */
+  scroll-snap-type: y mandatory; /* Enhancement 3: Scroll Snap */
+  scrollbar-width: none; /* Enhancement 5: Hidden Scrollbar for Firefox */
+}
+
+/* Enhancement 1: Custom Scrollbar Styles */
+#meow::-webkit-scrollbar {
+  width: 8px;
+}
+
+#meow::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#meow::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+#meow::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Enhancement 5: Hidden Scrollbar for Chrome, Safari, Opera */
+#meow::-webkit-scrollbar {
+  display: none;
+}
+
+#meow > div {
+  scroll-snap-align: start; /* Required for Scroll Snap */
+}
+
+#fart {
+  background-image: url("./img/scythe.jpg");
+  background-size: 1000px;
+  background-position: center;
+  background-color: #E3D9BB;
+  padding: 25px;
+  width: 425px;
+  height: 360px;
+  border: 1px solid;
+  box-shadow:inset -1px -1px #847967,inset 2px 2px #F3EFE8,inset -3px -3px #9B968D,inset 2px 2px #fff;
+  border-radius: 30px;
+}
+
+#profile {
+  width: auto;
+  font-size: 22px;
+  border: 1px solid;
+  border-radius: 5px;
+  color: rgb(248, 245, 245);
+  padding: 10px;
+  background-color: rgba(105, 38, 12, 0.8); /* Background color with opacity */
+  margin-right: 30px;
+  text-align: center;
+  line-height: 1.35em;
+}
+
+#mo {
+  width: 210px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+audio {
+  width: 100%;
+  display: block;
+  height: 40px !important;
+  margin-top: 10px;
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+#header {
+  filter: drop-shadow(4px 0 1px rgb(223, 14, 14)) drop-shadow(0 4px 1px rgb(213, 43, 43)) drop-shadow(-4px 0 1px rgb(222, 49, 49)) drop-shadow(0 -4px 1px rgb(219, 27, 27)) drop-shadow(-0px 1px 1px #81877B);
+  padding: 20px;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+}
+
+
+#interests {
+  align-self: center;
+  width: 500px;
+  height: auto;
+  background-color: #D1BEA5;
+  background-image: url("./img/arlecchino_eyes.jpg");
+  background-position: center;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 1.35em;
+}
+
+#kms {
+  border: -20px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  padding: 10px;
+  width: auto;
+  height: 200px;
+  overflow-y: scroll;
+  line-height: 1.35em;
+  scroll-behavior: smooth; /* Enhancement 2: Smooth Scrolling */
+  scroll-snap-type: y mandatory; /* Enhancement 3: Scroll Snap */
+  scrollbar-width: none; /* Enhancement 5: Hidden Scrollbar for Firefox */
+}
+
+/* Enhancement 1: Custom Scrollbar Styles */
+#kms::-webkit-scrollbar {
+  width: 8px;
+}
+
+#kms::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#kms::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+#kms::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Enhancement 5: Hidden Scrollbar for Chrome, Safari, Opera */
+#kms::-webkit-scrollbar {
+  display: none;
+}
+
+#kms > div {
+  scroll-snap-align: start; /* Required for Scroll Snap */
+}
+
+
+.tablinks  {
+  font-size: 30px;
+  font-family: balsamiq sans;
+  margin-top: 20px;
+  border-radius: 60px;
+  padding: 6px 15px 6px 15px;
+  box-shadow:inset -1px -1px #847967,inset 2px 2px #F3EFE8,inset -2px -2px #9B968D,inset 2px 2px #fff;
+  background-color: #ffffff;
+  color: #4D483F;
+}
+
+button:hover {
+  transform: rotate(-2deg);
+  background-color: #cb2923;
+}
+
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+
+#London {
+    text-align: left;
+}
+
+#Paris img {
+  width: 300px;
+  display: block;
+}
+  
+#back {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 15px;
+  filter: drop-shadow(2px 0 1px white) drop-shadow(0 2px 1px white) drop-shadow(-2px 0 1px white) drop-shadow(0 -2px 1px white) drop-shadow(-0px 1px 1px #81877B);
+}
+
+#back a {
+    text-decoration: none;
+}
+</style>
+  </head>
+<body>
+<div class="wrapper">
+  <div id="header">
+    Staring into my eyes is ill-advised. I can't promise you'll like what you see...
+  </div>
+<div class="main">
+  <div>
+ <div id="profile">
+   <img src=".\img\chibi.png" style="width:100px;position:absolute;z-index:100;top:120px;left:-20px;filter: drop-shadow(-0px 0px 1px #81877B);">
+   <img src=".\img\Avatar1.jpg" id="mo">
+   <strong>Eman</strong> <img src="https://stickerbook.carrd.co/assets/images/gallery02/cdb2059e.gif?v=cf518cde">  24, she/her, Jordan, INFJ.
+    </div>
+     <div id="back"><a href="***">Home is where my waifu's are</a></div>
+  </div>
+  <div id="fart">
+    <div id="meow">
+<img src=".\img\stamp.png" style="width:100px;float:right;"> Hi, my name is Eman (aka Batta)! I'm from Jordan, I'm working in programming as full stack developer. I'm an introverted person that keeps to myself. Most of my days are spent sleeping in my room or hunched over my laptop. I also have a deep passion for anime and gaming. In the future, I would like to develop my studies and career in this field. 
+    <p> I've been into anime watching and gaming for a long time, and both have become major hobbies of mine. I enjoy exploring various anime genres and gaming experiences, with favorites like Valorant, Stardew Valley, Destiny, Death Stranding, and Omega Strikers.
+     </p> <img src=".\img\arle_sit.png" style="width:100px;float:left;margin-right:10px;">  I've been told before by friends that I often come off as unapproachable or a mysterious person, so don't feel scared to interact with me! I’m very calm and I don't let anyone into my life easily. Underneath my quiet and withdrawn exterior, I'm literally just someone who wants to have fun.
+  </div>
+</div>
+<div align="center">
+<div id="interests">
+  <div id="kms">
+<div id="London" class="tabcontent" id="defaultOpen">
+ <img src=".\img\arle_wine.png" style="width:120px;float:left;margin-right:20px;"> <strong>Favorites ~!</strong> 
+  <li> color: black, blue </li>
+  <li> animal: cats!! </li>
+  <li> food: any kind of اندومي, بيتزا, برغر, شاورما </li>
+  <li> drink: hot chocolate </li>
+   <p>   <strong>TV Shows:</strong> 
+  <br>one piece, evangelion, attack on titan, danmachi, sousou no frieren, death note.
+  <p>
+   <strong>Books:</strong>
+    <br> agatha christie, Fyodor Dostoevsky, Ahmed Mourad
+    <p>
+  <strong>Films:</strong> 
+      <br> all studio ghibli films, anime films.
+    <p>
+<strong>Music:</strong> 
+      <br>بنضيف قائمتك المفضلة هنا
+    <p>
+   <strong>Video Games:</strong>
+      <br>Valorant, Stardew Valley, Destiny, Death Stranding, and Omega Strikers.
+  <p><strong>Characters:</strong>
+    <br> انتي تحطيه بنفسك يا بطة
+    </p>
+ <strong>General:</strong> 
+  <br> gaming, watching anime, exploring arts, traveling, food.  
+</div>
+ <div id="Paris" class="tabcontent"> حلو الفراغ صح؟
+ <!-- <A href="https://theotaku.com/quizzes/view/4097/what_dere_type_are_you%3F"><img border="0" src="http://www.theotaku.com/guru_results/4097_Dandere.jpg" alt="What Dere Type Are You?" width="100%"/> </a> 
+ <A href="https://www.theotaku.com/quizzes/view/3880/which_host_type_are_you%3F"><img border="0" src="http://www.theotaku.com/guru_results/3880_Strong_and_Silent_Type.jpg" alt="Which Host Type Are You?" width="100%"/></a>
+   <A href="https://www.theotaku.com/quizzes/view/3833/which_nichijou_character_are_you%3F"><img border="0" src="http://www.theotaku.com/guru_results/3833_Nano_Shinonome.jpg" alt="Which Nichijou Character Are You?" width="100%"/> </a> 
+    <A href="https://www.theotaku.com/quizzes/view/3913/which_hatsune_miku_nendoroid_model_are_you%3F"><img border="0" src="http://www.theotaku.com/guru_results/3913_Snow_Miku.jpg" alt="Which Hatsune Miku Nendoroid Model Are You?" width="100%"/></a><A href="https://www.theotaku.com/quizzes/view/3913/which_hatsune_miku_nendoroid_model_are_you%3F">
+    <A href="https://www.theotaku.com/quizzes/view/3458/what_type_of_cookie_are_you%3F"><img border="0" src="http://www.theotaku.com/guru_results/3458_Sugar_cookie.jpg" alt="What Type Of Cookie Are You?" /></a>
+    <A href="https://www.theotaku.com/quizzes/view/3007/which_death_note_guy_are_you%3F"><img border="0" src="http://www.theotaku.com/guru_results/3007_L.jpg" alt="Which Death Note Guy Are You?"/></a> -->
+</div>
+<div id="Tokyo" class="tabcontent">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fc3b32da-1781-4c38-913e-77d932172fa7/db7zw1f-16989ee4-0d69-4b1f-abf5-3f72c4a7295d.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZjM2IzMmRhLTE3ODEtNGMzOC05MTNlLTc3ZDkzMjE3MmZhN1wvZGI3encxZi0xNjk4OWVlNC0wZDY5LTRiMWYtYWJmNS0zZjcyYzRhNzI5NWQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.AzjYMsOnE3j8HXExgn_-ntc9IpyKs9HSyRHseCg9pg0">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0f86d918-28ec-4c53-8b3d-3f4d557c38d1/dbroxw0-86907a86-e233-46b3-9065-9f252712e9fb.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBmODZkOTE4LTI4ZWMtNGM1My04YjNkLTNmNGQ1NTdjMzhkMVwvZGJyb3h3MC04NjkwN2E4Ni1lMjMzLTQ2YjMtOTA2NS05ZjI1MjcxMmU5ZmIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RyMyKe3YM7KpUnM_uScY1ygMkIHi-MjHMrzAor7sUYU">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84467357-6e98-4a53-b56a-76ee9199b049/dc4c2hm-33ec360c-f3f6-44b3-a888-0fb8069c5b1c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0NDY3MzU3LTZlOTgtNGE1My1iNTZhLTc2ZWU5MTk5YjA0OVwvZGM0YzJobS0zM2VjMzYwYy1mM2Y2LTQ0YjMtYTg4OC0wZmI4MDY5YzViMWMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.tURhKvMrprRvU4c7hiLpwAJ54KmRyf4WuapdWLHle5w">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3de4fa65-39a2-48f7-a574-9566b31c98b8/d8v0rup-e3d709c7-69a6-42b9-92b6-dbbfda50b47f.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNkZTRmYTY1LTM5YTItNDhmNy1hNTc0LTk1NjZiMzFjOThiOFwvZDh2MHJ1cC1lM2Q3MDljNy02OWE2LTQyYjktOTJiNi1kYmJmZGE1MGI0N2YuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Rx12eMrg2zCTZojKqBR7Q5KYY23NnbNA64gDgrMx-0c">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c13b74f8-5efe-4da7-9b66-ea7bd129067f/dbmbfyd-f27e525e-b573-4027-ac1b-864ced9cb373.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2MxM2I3NGY4LTVlZmUtNGRhNy05YjY2LWVhN2JkMTI5MDY3ZlwvZGJtYmZ5ZC1mMjdlNTI1ZS1iNTczLTQwMjctYWMxYi04NjRjZWQ5Y2IzNzMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.oBqHEotEzMPmc2UBJdd7Tdx_JRfxDc__0i3gXGe_pBg">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9865a25b-3dcf-4076-ad61-b1e7a6a31980/dawrg8h-f9a97343-a47d-439b-8674-57969d9562c2.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzk4NjVhMjViLTNkY2YtNDA3Ni1hZDYxLWIxZTdhNmEzMTk4MFwvZGF3cmc4aC1mOWE5NzM0My1hNDdkLTQzOWItODY3NC01Nzk2OWQ5NTYyYzIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.1qXB-Cn5wSZ8hHPf38rws6XyVM8ZlPubRKWYPp-w_A8">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0f86d918-28ec-4c53-8b3d-3f4d557c38d1/dbmawgg-c612154a-2a8e-45dc-ac6f-9df3cc354f23.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBmODZkOTE4LTI4ZWMtNGM1My04YjNkLTNmNGQ1NTdjMzhkMVwvZGJtYXdnZy1jNjEyMTU0YS0yYThlLTQ1ZGMtYWM2Zi05ZGYzY2MzNTRmMjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Z772lKe-lx3IIm7qy3H7__BKrWWod874lEBXhvEj-4E">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8e79db37-b015-4152-99a7-c60b9787ac0c/dc63nfi-e98ddfb8-1cf4-46f5-aa91-d49c38de4dde.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhlNzlkYjM3LWIwMTUtNDE1Mi05OWE3LWM2MGI5Nzg3YWMwY1wvZGM2M25maS1lOThkZGZiOC0xY2Y0LTQ2ZjUtYWE5MS1kNDljMzhkZTRkZGUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.KTMxdH1szcCdHcPX-c_kPiUkq2olQ-wxUZaSMsyXUSo">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1b887270-eaf2-40b5-ae6a-db9af8357926/d4kq5sq-39dbfd9d-c219-466d-88bd-403d1948d976.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFiODg3MjcwLWVhZjItNDBiNS1hZTZhLWRiOWFmODM1NzkyNlwvZDRrcTVzcS0zOWRiZmQ5ZC1jMjE5LTQ2NmQtODhiZC00MDNkMTk0OGQ5NzYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.S3d2aOyzCejVHDJlDs0uMpgDii6zHZOPVcYc-iHTYE4" style=" filter: drop-shadow(-0px 1px 1px #81877B)">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1ce57f4b-017a-4f49-a51d-9bcab5d745aa/dd1s3th-85257492-bc51-45f1-afc2-0d7ae73b0ff9.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFjZTU3ZjRiLTAxN2EtNGY0OS1hNTFkLTliY2FiNWQ3NDVhYVwvZGQxczN0aC04NTI1NzQ5Mi1iYzUxLTQ1ZjEtYWZjMi0wZDdhZTczYjBmZjkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.f-mJbfeEW0mjBqxl0BpmBJ2fxr4j8jAwrrtqkIPpu8c"> 
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9d66fccc-38df-4d62-852f-260db93e755c/da6t5r6-433db461-156a-444d-9dec-6b2582350527.png/v1/fill/w_99,h_54,q_80,strp/anime_stamp_by_themoonraven_da6t5r6-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTQiLCJwYXRoIjoiXC9mXC85ZDY2ZmNjYy0zOGRmLTRkNjItODUyZi0yNjBkYjkzZTc1NWNcL2RhNnQ1cjYtNDMzZGI0NjEtMTU2YS00NDRkLTlkZWMtNmIyNTgyMzUwNTI3LnBuZyIsIndpZHRoIjoiPD05OSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.t58vqV7eIptGr4q1K_722_MABZ3z9_jkYgtAkm7id70">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/06849bc8-baca-434d-a065-b9b1e300a690/dcetidn-58a22451-4a45-4780-9a72-8c215150a49a.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA2ODQ5YmM4LWJhY2EtNDM0ZC1hMDY1LWI5YjFlMzAwYTY5MFwvZGNldGlkbi01OGEyMjQ1MS00YTQ1LTQ3ODAtOWE3Mi04YzIxNTE1MGE0OWEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.HkqmCa1aVeAlSX0yA6iNBfcsJRQOebNhk9dsNKEUEL0"> 
+   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/06849bc8-baca-434d-a065-b9b1e300a690/dcetidn-58a22451-4a45-4780-9a72-8c215150a49a.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA2ODQ5YmM4LWJhY2EtNDM0ZC1hMDY1LWI5YjFlMzAwYTY5MFwvZGNldGlkbi01OGEyMjQ1MS00YTQ1LTQ3ODAtOWE3Mi04YzIxNTE1MGE0OWEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.HkqmCa1aVeAlSX0yA6iNBfcsJRQOebNhk9dsNKEUEL0">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fb60655c-8950-4cee-941c-38c017e39b4a/dagfuev-c20b9e09-2c4e-4b99-9c58-4b655d2ee83b.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZiNjA2NTVjLTg5NTAtNGNlZS05NDFjLTM4YzAxN2UzOWI0YVwvZGFnZnVldi1jMjBiOWUwOS0yYzRlLTRiOTktOWM1OC00YjY1NWQyZWU4M2IuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.FRDy82FeLD5PTdA3moRYJTcfTNsZFUjh8lY4h5Q2q6I">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bc20df7c-8ea1-4e8d-98f1-1832f4748af5/d7jcvwg-9da5d2a2-0ad2-4718-85be-2a2d9b030f43.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JjMjBkZjdjLThlYTEtNGU4ZC05OGYxLTE4MzJmNDc0OGFmNVwvZDdqY3Z3Zy05ZGE1ZDJhMi0wYWQyLTQ3MTgtODViZS0yYTJkOWIwMzBmNDMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.NUAs3ns2mKGr8O1_P1Ka4M1dnxR7wD56V4k3iFjZMpg">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3bcd2a89-3770-4001-9a59-c2b036be0bed/d620c4k-155c4f2d-ee9b-4632-bd4d-5c383c5e5eb2.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNiY2QyYTg5LTM3NzAtNDAwMS05YTU5LWMyYjAzNmJlMGJlZFwvZDYyMGM0ay0xNTVjNGYyZC1lZTliLTQ2MzItYmQ0ZC01YzM4M2M1ZTVlYjIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3kNuku4B7UH7HHGLlXaxZgxeQLvHJlSbhKNea6pEs4I">
+  <p> بضيف زيادة بين فترة وفترة
+</div>
+  </div>
+ <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">اهتماماتي</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">زر بدون فايدة</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">اختام</button>
+  </div>
+  </div>
+  </div>
+</body>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+  </html>
+<!-- partial -->
+  
+</body>
+</html>
