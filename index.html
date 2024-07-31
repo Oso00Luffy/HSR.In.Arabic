@@ -116,7 +116,7 @@
     audio {
       width: 100%;
       display: block;
-      height: 50px !important;
+      height: auto !important;
       margin-top: 10px;
       border: 1px solid;
       border-radius: 20px;
@@ -174,7 +174,7 @@
       background: transparent;
       padding: 10px;
       width: auto;
-      height: 200px;
+      height: auto;
       overflow-y: scroll;
       line-height: 1.35em;
       scroll-behavior: smooth;
@@ -250,7 +250,7 @@
       border: 2px solid transparent;
       border-radius: 50%;
       width: 80px; /* Adjust width as needed */
-      height: 80px;
+      height: auto;
     }
 
     .character-avatar:hover {
@@ -260,7 +260,7 @@
       display: flex;
       justify-content: center; /* Centers the image horizontally */
       align-items: center; /* Centers the image vertically */
-      height: 100vh; /* Optional: Adjust based on your layout */
+      height: auto; /* Optional: Adjust based on your layout */
     }
     
     .centered-image {
@@ -388,18 +388,43 @@
 
 <div id="Lightcones" class="tabcontent">
   <h2>لايت كون</h2>
-
+  <div class="character-list">
+    <img src="./characters/1001.png" class="character-avatar" onclick="showCharacterDetails('character1')">
+    <img src="https://example.com/lightcone_avatar2.jpg" class="character-avatar" onclick="showCharacterDetails('character2')">
+  </div>
+  <div id="character1" class="character-details">
+    <img src="./builds/photo_2024-07-31_12-43-47.jpg" alt="Lightcone Image" class="thumbnail" onclick="openModal(this)">
+    <h3>بيلد مارش 7</h3>
+    <p>شخصية متخصصة في الدفاع ومنح الدرع لفريقها</p>
+  </div>
 <h2>قم بالضغط على اللايت كون لـ عرض تفاصيله</h2>
 </div>
 
 <div id="Skills" class="tabcontent">
   <h2>المهارات</h2>
-
+  <div class="character-list">
+    <img src="./characters/1001.png" class="character-avatar" onclick="showCharacterDetails('character1')">
+    <img src="https://example.com/lightcone_avatar2.jpg" class="character-avatar" onclick="showCharacterDetails('character2')">
+  </div>
+  <div id="character1" class="character-details">
+    <img src="./builds/photo_2024-07-31_12-43-47.jpg" alt="Lightcone Image" class="thumbnail" onclick="openModal(this)">
+    <h3>بيلد مارش 7</h3>
+    <p>شخصية متخصصة في الدفاع ومنح الدرع لفريقها</p>
+  </div>
   <h2>قم بالضغط على صورة الشخصية لـ عرض المهارات</h2>
 </div>
 
 <div id="Eidolon" class="tabcontent">
   <h2>ايدولونز</h2>
+  <div class="character-list">
+    <img src="./characters/1001.png" class="character-avatar" onclick="showCharacterDetails('character1')">
+    <img src="https://example.com/lightcone_avatar2.jpg" class="character-avatar" onclick="showCharacterDetails('character2')">
+  </div>
+  <div id="character1" class="character-details">
+    <img src="./builds/photo_2024-07-31_12-43-47.jpg" alt="Lightcone Image" class="thumbnail" onclick="openModal(this)">
+    <h3>بيلد مارش 7</h3>
+    <p>شخصية متخصصة في الدفاع ومنح الدرع لفريقها</p>
+  </div>
   <h2>اضغط على الشخصية لترى الايدولون الخاصة بها</h2>
 </div>
 
@@ -426,19 +451,13 @@
 <div id="Resource" class="tabcontent">
   <h2>موارد البناء</h2>
   <div class="character-list">
-    <img src="https://example.com/character_avatar1.jpg" class="character-avatar" onclick="showCharacterDetails('character1')">
-    <img src="https://example.com/character_avatar2.jpg" class="character-avatar" onclick="showCharacterDetails('character2')">
-    <!-- Add more character avatars as needed -->
+    <img src="./characters/1001.png" class="character-avatar" onclick="showCharacterDetails('character1')">
+    <img src="https://example.com/lightcone_avatar2.jpg" class="character-avatar" onclick="showCharacterDetails('character2')">
   </div>
   <div id="character1" class="character-details">
-    <img src="https://example.com/character_image1.jpg" alt="Character Image">
-    <h3>Character Name 1</h3>
-    <p>Details about character 1 build, including skills, equipment, and strategies.</p>
-  </div>
-  <div id="character2" class="character-details">
-    <img src="https://example.com/character_image2.jpg" alt="Character Image">
-    <h3>Character Name 2</h3>
-    <p>Details about character 2 build, including skills, equipment, and strategies.</p>
+    <img src="./builds/photo_2024-07-31_12-43-47.jpg" alt="Lightcone Image" class="thumbnail" onclick="openModal(this)">
+    <h3>بيلد مارش 7</h3>
+    <p>شخصية متخصصة في الدفاع ومنح الدرع لفريقها</p>
   </div>
   <h2>قم بالضغط على صورة الشخصية لـ معرفة موارد بنائها</h2>
 </div>
