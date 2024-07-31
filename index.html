@@ -28,8 +28,6 @@
       font-size: 18px;
       color: #ffffff;
       position: relative;
-      margin: 0;
-      padding: 0;
     }
 
     a {
@@ -37,16 +35,14 @@
     }
 
     .wrapper {
-      width: 90%;
-      max-width: 700px;
+      width: 700px;
       display: block;
     }
 
     .main {
       width: auto;
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
+      grid-template-columns: 40% 60%;
     }
 
     #meow {
@@ -93,7 +89,7 @@
       background-position: center;
       background-color: #E3D9BB;
       padding: 25px;
-      width: 100%;
+      width: 425px;
       height: 360px;
       border: 1px solid;
       box-shadow: inset -1px -1px #847967, inset 2px 2px #F3EFE8, inset -3px -3px #9B968D, inset 2px 2px #fff;
@@ -138,7 +134,7 @@
 
     #interests {
       align-self: center;
-      width: 100%;
+      width: 500px;
       height: auto;
       background-color: #D1BEA5;
       background-image: url("./img/arlecchino_eyes.jpg");
@@ -251,88 +247,24 @@
     .character-avatar:hover {
       border: 2px solid #fff;
     }
-
-    /* Media Queries for Responsive Design */
-    @media (min-width: 1000px) {
-      .main {
-        grid-template-columns: 40% 60%;
-      }
-      #fart {
-        height: auto;
-      }
-      .tablinks {
-        font-size: 24px;
-        padding: 8px 16px;
-      }
-      .tabcontent h2 {
-        font-size: 24px;
-      }
-    }
-
-    @media (max-width: 999px) {
-      html {
-        min-width: 0;
-        padding: 10px;
-      }
-      .main {
-        grid-template-columns: 1fr;
-      }
-      #profile {
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
-      #fart {
-        height: auto;
-        padding: 15px;
-      }
-      .tablinks {
-        font-size: 20px;
-        padding: 6px 12px;
-      }
-      .tabcontent h2 {
-        font-size: 20px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .tablinks {
-        font-size: 18px;
-        padding: 5px 10px;
-      }
-      .tabcontent h2 {
-        font-size: 18px;
-      }
-      #fart {
-        padding: 10px;
-      }
-      .character-details img {
-        width: 150px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .tablinks {
-        font-size: 16px;
-        padding: 4px 8px;
-      }
-      .tabcontent h2 {
-        font-size: 16px;
-      }
-      .character-details img {
-        width: 100px;
-      }
-    }
   </style>
 </head>
 <body>
   <div class="wrapper">
+    <div id="header">
+      Staring into my eyes is ill-advised. I can't promise you'll like what you see...
+    </div>
     <div class="main">
-      <div id="fart">
-        <div id="header">
-          <h1>Eman's World</h1>
-        </div>
+      <div>
         <div id="profile">
-          <img src="https://stickerbook.carrd.co/assets/images/gallery15/727c5d1a.png?v=82c3cbd3" id="mo" alt="meow">
+          <img src=".\img\chibi.png" style="width:100px;position:absolute;z-index:100;top:120px;left:-20px;filter: drop-shadow(-0px 0px 1px #81877B);">
+          <img src=".\img\Avatar1.jpg" id="mo">
+          <strong>Eman</strong> <img src="https://stickerbook.carrd.co/assets/images/gallery02/cdb2059e.gif?v=cf518cde">  24, she/her, Jordan, INFJ.
+        </div>
+        <div id="back"><a href="***">Home is where my waifu's are</a></div>
+      </div>
+      <div id="fart">
+        <div id="meow">
           <div>Love</div>
           <p>🦋 Anime and Games <br>
           🎨 Drawing <br>
