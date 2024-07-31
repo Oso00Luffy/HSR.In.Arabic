@@ -296,14 +296,24 @@ section[data-section-id="64ef64b0faeb714170c9687c"] {
 /* Example media query to adjust styles for smaller screens */
 @media only screen and (max-width: 767px) {
   body {
-    img {
-      max-width: 100%; /* Ensure images don’t overflow their container */
-      height: auto; /* Maintain aspect ratio */
+    .navbar {
+      display: block; /* Make sure the navbar is visible */
+      width: 100%; /* Full-width for mobile */
+      text-align: center; /* Center-align text */
   }
 
-  video {
-      max-width: 100%; /* Ensure videos fit within their container */
-      height: auto; /* Maintain aspect ratio */
+  .navbar ul {
+      list-style-type: none; /* Remove default list styles */
+      padding: 0;
+  }
+
+  .navbar li {
+      display: block; /* Stack navbar items vertically */
+  }
+
+  .navbar a {
+      display: block; /* Make links block-level for easier tapping */
+      padding: 10px; /* Add padding around links */
   }
   }
 }
