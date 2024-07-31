@@ -250,6 +250,8 @@
       cursor: pointer;
       border: 2px solid transparent;
       border-radius: 50%;
+      width: 80px; /* Adjust width as needed */
+      height: 80px;
     }
 
     .character-avatar:hover {
@@ -302,6 +304,41 @@
   padding: 20px;
 }
 
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%; /* Adjust as needed */
+  max-width: 700px; /* Maximum width */
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #bbb;
+}
+
   </style>
 </head>
 <body>
@@ -329,11 +366,11 @@
 <div id="Builds" class="tabcontent">
   <h2>بيلدات الشخصيات</h2>
   <div class="character-list">
-    <img src="https://example.com/lightcone_avatar1.jpg" class="character-avatar" onclick="showCharacterDetails('lightcone1')">
+    <img src="./characters/1001.png" class="character-avatar" onclick="showCharacterDetails('lightcone1')">
     <img src="https://example.com/lightcone_avatar2.jpg" class="character-avatar" onclick="showCharacterDetails('lightcone2')">
   </div>
   <div id="lightcone1" class="character-details">
-    <img src="https://example.com/lightcone_image1.jpg" alt="Lightcone Image">
+    <img src="./builds/photo_2024-07-31_12-43-47.jpg" alt="Lightcone Image" class="thumbnail" onclick="openModal(this)">
     <h3>Lightcone Name 1</h3>
     <p>Details about lightcone 1 setup, including benefits and synergies.</p>
   </div>
@@ -343,6 +380,11 @@
     <p>Details about lightcone 2 setup, including benefits and synergies.</p>
   </div>
   <h2>قم بالضغط على صورة الشخصية لـ عرض بيلدها</h2>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modal-img">
 </div>
 
 <div id="Lightcones" class="tabcontent">
@@ -461,6 +503,20 @@
   <script src="script.js"></script>
 
   <script>
+
+    function openModal(img) {
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("modal-img");
+    
+      modal.style.display = "block";
+      modalImg.src = img.src;
+    }
+    
+    function closeModal() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+    }
+
     function openTab(evt, tabName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
