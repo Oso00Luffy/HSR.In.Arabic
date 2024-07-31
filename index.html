@@ -296,7 +296,15 @@ section[data-section-id="64ef64b0faeb714170c9687c"] {
 /* Example media query to adjust styles for smaller screens */
 @media only screen and (max-width: 767px) {
   body {
-      /* Adjust any styles for mobile devices */
+    img {
+      max-width: 100%; /* Ensure images don’t overflow their container */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  video {
+      max-width: 100%; /* Ensure videos fit within their container */
+      height: auto; /* Maintain aspect ratio */
+  }
   }
 }
 .background-video video {
