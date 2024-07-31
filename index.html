@@ -241,8 +241,10 @@
     }
     h2 {
       text-align: center; /* Centers the text horizontally */
-      font-size: 2rem; /* Adjust the font size as needed */
-      color: #333; /* Set the text color */
+      font-size: 2rem; 
+      filter:  drop-shadow(-0px 1px 1px #81877B);
+      /* Adjust the font size as needed */
+      color: #ffffff; /* Set the text color */
       font-family: 'Balsamiq Sans', sans-serif; /* Apply a specific font-family if desired */
       margin: 20px 0; /* Adds margin above and below the heading */
       padding: 10px; /* Adds padding around the heading text */
@@ -254,39 +256,54 @@
   
   <div class="wrapper">
     <div id="header">
-<a href="https://t.me/HonkaiStarRailAR">اهلاًوسهلًا في أفضل مجتمع عربي لـ هونكاي: ستار ريل</a>    </div>
+<a href="https://t.me/HonkaiStarRailAR">اهلاً وسهلًا في أفضل مجتمع عربي لـ هونكاي: ستار ريل</a>    </div>
 <div id="interests">
-  <button class="tablinks" onclick="openTab(event, 'AboutMe')">البيلدات</button>
-  <button class="tablinks" onclick="openTab(event, 'Anime')">لايت كون</button>
-  <button class="tablinks" onclick="openTab(event, 'Games')">مهارات</button>
-  <button class="tablinks" onclick="openTab(event, 'Skillset')">الايدولون</button>
-  <button class="tablinks" onclick="openTab(event, 'CharacterBuilds')">الريليكس</button>
-  <button class="tablinks" onclick="openTab(event, 'Lightcones')">موارد التطوير</button>
-  <button class="tablinks" onclick="openTab(event, 'Skills')">وقت البنر</button>
+  <button class="tablinks" onclick="openTab(event, 'Builds')">البيلدات</button>
+  <button class="tablinks" onclick="openTab(event, 'Lightcones')">لايت كون</button>
+  <button class="tablinks" onclick="openTab(event, 'Skills')">مهارات</button>
+  <button class="tablinks" onclick="openTab(event, 'Eidolon')">الايدولون</button>
+  <button class="tablinks" onclick="openTab(event, 'Relics')">الريليكس</button>
+  <button class="tablinks" onclick="openTab(event, 'Resource')">موارد التطوير</button>
+  <button class="tablinks" onclick="openTab(event, 'Time')">وقت البنر</button>
   <button class="tablinks" onclick="openTab(event, 'Names')">اسماء الشخصيات</button>
   <button class="tablinks" onclick="openTab(event, 'Map')">الخريطة</button>
+  <button class="tablinks" onclick="openTab(event, 'Group')">القناة</button>
+</div>
+<div id="Builds" class="tabcontent">
+  <h2>بيلدات الشخصيات</h2>
+  <div class="character-list">
+    <img src="https://example.com/lightcone_avatar1.jpg" class="character-avatar" onclick="showCharacterDetails('lightcone1')">
+    <img src="https://example.com/lightcone_avatar2.jpg" class="character-avatar" onclick="showCharacterDetails('lightcone2')">
+  </div>
+  <div id="lightcone1" class="character-details">
+    <img src="https://example.com/lightcone_image1.jpg" alt="Lightcone Image">
+    <h3>Lightcone Name 1</h3>
+    <p>Details about lightcone 1 setup, including benefits and synergies.</p>
+  </div>
+  <div id="lightcone2" class="character-details">
+    <img src="https://example.com/lightcone_image2.jpg" alt="Lightcone Image">
+    <h3>Lightcone Name 2</h3>
+    <p>Details about lightcone 2 setup, including benefits and synergies.</p>
+  </div>
+  <h2>قم بالضغط على صورة الشخصية لـ عرض بيلدها</h2>
+</div>
 
+<div id="Lightcones" class="tabcontent">
+  <h2>لايت كون</h2>
+<p></p>
 </div>
-<div id="AboutMe" class="tabcontent">
-  <h2>About me</h2>
-  <p>I'm a web developer with a passion for creating dynamic and responsive websites. I have a strong background in both front-end and back-end development, and I'm always eager to learn new technologies and improve my skills.</p>
-  <p>My journey into programming started when I was young, and since then, I have developed a deep love for coding. I enjoy solving complex problems and finding efficient solutions through code.</p>
-</div>
-<div id="Anime" class="tabcontent">
-  <h2>Anime</h2>
-  <p>I have a deep passion for anime, and some of my all-time favorites include "Attack on Titan," "My Hero Academia," and "One Piece." Anime has always been a source of inspiration and relaxation for me.</p>
-  <img src="https://stickerbook.carrd.co/assets/images/gallery08/c59801ed.png?v=99b7dff0">
-  <img src="https://stickerbook.carrd.co/assets/images/gallery08/d43a3d0e.png?v=4800b5d8">
-</div>
-<div id="Games" class="tabcontent">
+
+<div id="Eidolon" class="tabcontent">
   <h2>Games</h2>
   <p>Gaming is another major hobby of mine, and I love playing a variety of games. Some of my favorites include "Valorant," "Stardew Valley," "Destiny," "Death Stranding," and "Omega Strikers." Gaming provides a great way to relax and unwind after a long day.</p>
 </div>
-<div id="Skillset" class="tabcontent">
+
+<div id="Relics" class="tabcontent">
   <h2>Skillset</h2>
   <p>As a full stack developer, I have expertise in a wide range of technologies, including HTML, CSS, JavaScript, and Python. I am also proficient in frameworks such as React, Angular, and Django. My skillset allows me to build comprehensive web applications from scratch.</p>
 </div>
-<div id="CharacterBuilds" class="tabcontent">
+
+<div id="Resource" class="tabcontent">
   <h2>Character Builds</h2>
   <div class="character-list">
     <img src="https://example.com/character_avatar1.jpg" class="character-avatar" onclick="showCharacterDetails('character1')">
@@ -303,9 +320,9 @@
     <h3>Character Name 2</h3>
     <p>Details about character 2 build, including skills, equipment, and strategies.</p>
   </div>
-
 </div>
-<div id="Lightcones" class="tabcontent">
+
+<div id="Names" class="tabcontent">
   <h2>Lightcones</h2>
   <div class="character-list">
     <img src="https://example.com/lightcone_avatar1.jpg" class="character-avatar" onclick="showCharacterDetails('lightcone1')">
@@ -321,9 +338,9 @@
     <h3>Lightcone Name 2</h3>
     <p>Details about lightcone 2 setup, including benefits and synergies.</p>
   </div>
-
 </div>
-<div id="Skills" class="tabcontent">
+
+<div id="Time" class="tabcontent">
   <h2>وقت البانر</h2>
 
   <div class="character-list">
@@ -331,17 +348,41 @@
       <img src="./img/photo_2024-07-31_10-48-18.jpg" alt="وقت البنر" class="centered-image">
     </div>
 
-  </div>
-  <div id="skill1" class="character-details">
-    <img src="https://example.com/skill_image1.jpg" alt="Skill Image">
-    <h3>Skill Name 1</h3>
-    <p>Details about skill 1, including tips on how to utilize it effectively in different game scenarios.</p>
-  </div>
-  <div id="skill2" class="character-details">
-    <img src="https://example.com/skill_image2.jpg" alt="Skill Image">
-    <h3>Skill Name 2</h3>
-    <p>Details about skill 2, including tips on how to utilize it effectively in different game scenarios.</p>
-  </div>
+  <div id="Map" class="tabcontent">
+    <h2>Character Builds</h2>
+    <div class="character-list">
+      <img src="https://example.com/character_avatar1.jpg" class="character-avatar" onclick="showCharacterDetails('ch1')">
+      <img src="https://example.com/character_avatar2.jpg" class="character-avatar" onclick="showCharacterDetails('ch2')">
+      <!-- Add more character avatars as needed -->
+    </div>
+    <div id="ch1" class="character-details">
+      <img src="https://example.com/character_image1.jpg" alt="Character Image">
+      <h3>Character Name 1</h3>
+      <p>Details about character 1 build, including skills, equipment, and strategies.</p>
+    </div>
+    <div id="ch2" class="character-details">
+      <img src="https://example.com/character_image2.jpg" alt="Character Image">
+      <h3>Character Name 2</h3>
+      <p>Details about character 2 build, including skills, equipment, and strategies.</p>
+    </div>
+
+    <div id="Group" class="tabcontent">
+      <h2>Character Builds</h2>
+      <div class="character-list">
+        <img src="https://example.com/character_avatar1.jpg" class="character-avatar" onclick="showCharacterDetails('ch1')">
+        <img src="https://example.com/character_avatar2.jpg" class="character-avatar" onclick="showCharacterDetails('ch2')">
+        <!-- Add more character avatars as needed -->
+      </div>
+      <div id="ch1" class="character-details">
+        <img src="https://example.com/character_image1.jpg" alt="Character Image">
+        <h3>Character Name 1</h3>
+        <p>Details about character 1 build, including skills, equipment, and strategies.</p>
+      </div>
+      <div id="ch2" class="character-details">
+        <img src="https://example.com/character_image2.jpg" alt="Character Image">
+        <h3>Character Name 2</h3>
+        <p>Details about character 2 build, including skills, equipment, and strategies.</p>
+      </div>
 
 </div>
     <div class="main">
