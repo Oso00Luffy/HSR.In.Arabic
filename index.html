@@ -18,18 +18,21 @@
       display: flex;
       justify-content: center;
     }
-
-    body {
-      background-image: url("./img/ezgif-5-970bde4d52.webp");
-      background-attachment: fixed;
-      background-position: top center;
-      background-repeat: repeat;
-      background-size: cover;
-      font-family: 'Balsamiq Sans';
-      font-size: 18px;
-      color: #ffffff;
-      position: relative;
-    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+  }
+  body {
+    background-image: url("./img/ezgif-5-970bde4d52.webp");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
     
     .music-player {
       text-align: center;
@@ -290,15 +293,10 @@
   z-index: -1; /* Puts the video behind other content */
 }
 @media (max-width: 768px) {
-  body {
-    background-attachment: scroll; /* Change attachment to scroll on mobile */
-    background-size: contain; /* Adjust size to contain image */
-  }
-}
-@media (max-width: 768px) {
-  body {
-    background-image: url("./img/wallhaven-l8v5vq.png.jpg");
-  }
+    body {
+        background-size: contain; /* Ensures the entire image is visible */
+        background-attachment: scroll; /* Allows scrolling */
+    }
 }
 .background-video video {
   width: 100%;
