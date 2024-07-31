@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ستار ريل بالعربي</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./img/photo_2024-07-31_08-34-47.jpg">
@@ -28,6 +30,29 @@
       font-size: 18px;
       color: #ffffff;
       position: relative;
+    }
+    
+    .music-player {
+      text-align: center;
+    }
+    
+    #play-button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    
+    #play-button:hover {
+      background-color: #45a049;
     }
 
     a {
@@ -206,7 +231,9 @@
       margin-top: 20px;
       text-align: center;
     }
-
+    a {
+      text-decoration: none;
+    }
     .character-details img {
       width: 200px;
       border-radius: 10px;
@@ -250,10 +277,40 @@
       padding: 10px; /* Adds padding around the heading text */
       border-bottom: 2px solid #ddd; /* Optional: Adds a border below the heading */
     }
+
+/* Ensure the video covers the entire background */
+.background-video {
+  position: fixed; /* Stays in place during scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Puts the video behind other content */
+}
+
+.background-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire area without distortion */
+}
+
+.content {
+  position: relative; /* Allows layering content above the video */
+  z-index: 1; /* Ensures content is above the video */
+  color: white; /* Example text color */
+  padding: 20px;
+}
+
   </style>
 </head>
 <body>
-  
+  <div class="background-video">
+    <video autoplay loop muted playsinline>
+      <source src="./img/rapidsave.com_fireflys_secret_base-s42u1r7gi6hc1-ezgif.com-video-cutter.mp4" type="video/mp4">
+    </video>
+  </div>
+
   <div class="wrapper">
     <div id="header">
 <a href="https://t.me/HonkaiStarRailAR">اهلاً وسهلًا في أفضل مجتمع عربي لـ هونكاي: ستار ريل</a>    </div>
@@ -290,12 +347,14 @@
 
 <div id="Lightcones" class="tabcontent">
   <h2>لايت كون</h2>
-<p></p>
+
+<h2>قم بالضغط على اللايت كون لـ عرض تفاصيله</h2>
 </div>
 
 <div id="Skills" class="tabcontent">
   <h2>المهارات</h2>
-<p></p>
+
+  <h2>قم بالضغط على صورة الشخصية لـ عرض المهارات</h2>
 </div>
 
 <div id="Eidolon" class="tabcontent">
@@ -320,11 +379,11 @@
     <h3>Character Name 2</h3>
     <p>Details about character 2 build, including skills, equipment, and strategies.</p>
   </div>
-  <h2>اضغط على صورة الريليكس لعرض تفاصيلها</h2>
+  <h2>اضغط على الريليك لعرض تفاصيلها</h2>
 </div>
 
 <div id="Resource" class="tabcontent">
-  <h2>Character Builds</h2>
+  <h2>موارد البناء</h2>
   <div class="character-list">
     <img src="https://example.com/character_avatar1.jpg" class="character-avatar" onclick="showCharacterDetails('character1')">
     <img src="https://example.com/character_avatar2.jpg" class="character-avatar" onclick="showCharacterDetails('character2')">
@@ -340,32 +399,32 @@
     <h3>Character Name 2</h3>
     <p>Details about character 2 build, including skills, equipment, and strategies.</p>
   </div>
+  <h2>قم بالضغط على صورة الشخصية لـ معرفة موارد بنائها</h2>
 </div>
 
 <div id="Names" class="tabcontent">
-  <h2>Lightcones</h2>
-  <div class="character-list">
-    <img src="https://example.com/lightcone_avatar1.jpg" class="character-avatar" onclick="showCharacterDetails('lightcone1')">
-    <img src="https://example.com/lightcone_avatar2.jpg" class="character-avatar" onclick="showCharacterDetails('lightcone2')">
-  </div>
-  <div id="lightcone1" class="character-details">
-    <img src="https://example.com/lightcone_image1.jpg" alt="Lightcone Image">
-    <h3>Lightcone Name 1</h3>
-    <p>Details about lightcone 1 setup, including benefits and synergies.</p>
-  </div>
-  <div id="lightcone2" class="character-details">
-    <img src="https://example.com/lightcone_image2.jpg" alt="Lightcone Image">
-    <h3>Lightcone Name 2</h3>
-    <p>Details about lightcone 2 setup, including benefits and synergies.</p>
-  </div>
+  <h2>اسماء</h2>
+  <h2>عرض الاسماء الخاصة بـ الشخصيات</h2>
 </div>
 
 <div id="Map" class="tabcontent">
   <h2>Map</h2>
+  <div class="image-container">
+    <img src="./img/photo_2024-07-31_12-30-46.jpg" alt="وقت البنر" class="centered-image">
+  </div>
+  <h2>خريطة للشخصيات القابلة لـ اللعب</h2>
     </div>
 
 <div id="Group" class="tabcontent">
   <h2>Group</h2>
+  <video controls autoplay loop muted width="640" height="360">
+    <source src="img/video_2024-07-31_12-25-57.mp4" type="video/mp4">
+  </video>
+  <h2>
+    <a href="https://t.me/HonkaiStarRailAR" target="_blank" style="color: white;">ستار ريل</a> |
+    <a href="https://t.me/GenshinArabi" target="_blank" style="color: white;">قنشن امباكت</a> |
+    <a href="https://t.me/WutheringWavesAR" target="_blank" style="color: white;">وذرينق ويفز</a>
+  </h2>
 </div>    
 
 <div id="Time" class="tabcontent">
@@ -392,6 +451,15 @@
     </div>
    
   </div>
+
+  <div class="music-player">
+    <button id="play-button" onclick="playMusic()">Play Music</button>
+    <audio id="background-music" src="Sounds/If I Can Stop One Heart From Breaking Honkai Star Rail.mp3" loop>
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <script src="script.js"></script>
+
   <script>
     function openTab(evt, tabName) {
       var i, tabcontent, tablinks;
@@ -415,8 +483,24 @@
       document.getElementById(characterId).style.display = "flex";
     }
   </script>
-  <audio id="background-music" src="Sounds/If I Can Stop One Heart From Breaking Honkai Star Rail.mp3" autoplay loop>
-    Your browser does not support the audio element.
-  </audio>
+  <script>
+    function playMusic() {
+      var audio = document.getElementById('background-music');
+      audio.play();
+    }
+
+    function playMusic() {
+      var audio = document.getElementById('background-music');
+      var button = document.getElementById('play-button');
+      
+      if (audio.paused) {
+        audio.play();
+        button.textContent = 'Pause Music';
+      } else {
+        audio.pause();
+        button.textContent = 'Play Music';
+      }
+    }
+  </script>
 </body>
 </html>
