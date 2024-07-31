@@ -115,7 +115,7 @@
       width: 600px;
       height: auto;
       background-color: #D1BEA5;
-      background-image: url("./img/arlecchino_eyes.jpg");
+      background-image: url("./img/Honkai-Star-Rail-2.4-release-date,-2.4-Banner-and-event-details-cover.webp");
       background-position: center;
       padding: 20px;
       border: 1px solid;
@@ -228,6 +228,17 @@
     .character-avatar:hover {
       border: 2px solid #fff;
     }
+    .image-container {
+      display: flex;
+      justify-content: center; /* Centers the image horizontally */
+      align-items: center; /* Centers the image vertically */
+      height: 100vh; /* Optional: Adjust based on your layout */
+    }
+    
+    .centered-image {
+      max-width: 100%; /* Makes sure the image does not overflow its container */
+      height: auto; /* Maintains the aspect ratio */
+    }
   </style>
 </head>
 <body>
@@ -304,10 +315,12 @@
 
 </div>
 <div id="Skills" class="tabcontent">
-  <h2>Skills</h2>
+  <h2>وقت البانر</h2>
+
   <div class="character-list">
-    <img src="https://example.com/skill_avatar1.jpg" class="character-avatar" onclick="showCharacterDetails('skill1')">
-    <img src="https://example.com/skill_avatar2.jpg" class="character-avatar" onclick="showCharacterDetails('skill2')">
+    <div class="image-container">
+      <img src="./img/photo_2024-07-31_10-48-18.jpg" alt="وقت البنر" class="centered-image">
+    </div>
 
   </div>
   <div id="skill1" class="character-details">
